@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalController, NavController, Modal, ViewController } from 'ionic-angular';
-import { ModalPage } from 'confirmacao';
+import { NavController } from 'ionic-angular';
 
 @Component({
     selector: 'page-transferencia',
