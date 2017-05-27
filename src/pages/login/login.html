@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-navbar color="primary">
+    <ion-navbar color="blueCE">
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
@@ -14,7 +14,7 @@
             </ion-col>
 
             <ion-col col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4>
-                <img src="../../assets/img/caixaLogo.png">
+                <img src="assets/img/caixaLogo.png">
             </ion-col>
         </ion-row>
         <ion-row>
@@ -46,7 +46,7 @@
             <ion-col col-2 col-sm-2 col-md-3 col-lg-4 col-xl-4>
             </ion-col>
             <ion-col col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 text-right>
-                <button ion-button outline float-right>Entrar</button>
+                <button ion-button outline float-right (click)="login()">Entrar</button>
             </ion-col>
         </ion-row>
     </ion-grid>

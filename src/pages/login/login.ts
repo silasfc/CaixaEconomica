@@ -11,4 +11,8 @@ export class LoginPage {
 
   }
 
+  login() {
+    alert("hello");
+  }
+
 }
