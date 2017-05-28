@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { ExtratoPage } from '../extrato/extrato';
+import { PagamentoPage } from '../pagamento/pagamento';
+import { TransferenciaPage } from '../transferencia/transferencia';
 
 @Component({
   selector: 'page-home',
@@ -8,7 +11,18 @@ import { NavController, NavParams } from 'ionic-angular';
 export class HomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    console.log(navParams.get('val'));
+    // console.log(navParams.get('auth'));
   }
 
+  navExtrato() {
+    this.navCtrl.push(ExtratoPage);
+  }
+
+  navPagamento() {
+    this.navCtrl.push(PagamentoPage);
+  }
+
+  navTransferencia() {
+    this.navCtrl.push(TransferenciaPage);
+  }
 }

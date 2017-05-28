@@ -10,10 +10,9 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController) {}
 
-  load() {
-    this.navCtrl.push(HomePage, {
-      val: 'Silas'
-    });
+  loadHome() {
+    // this.navCtrl.setRoot(HomePage);
+    this.navCtrl.push(HomePage, {auth: true});
   }
 
 }

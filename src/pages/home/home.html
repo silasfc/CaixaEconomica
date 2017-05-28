@@ -3,7 +3,7 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title text-right>R$ 1234,56</ion-title>
+        <ion-title text-right>R$ 1234,56&nbsp;</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -14,32 +14,17 @@
             </ion-col>
 
             <ion-col col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4>
-
                 <ion-card class="card">
-
-                    <ion-card-header text-center>
-                        Saldo/Extrato
-                    </ion-card-header>
-
+                    <ion-card-header text-center (click)="navExtrato()">Saldo/Extrato</ion-card-header>
                 </ion-card>
 
                 <ion-card>
-
-                    <ion-card-header text-center>
-                        Pagamento
-                    </ion-card-header>
-
+                    <ion-card-header text-center (click)="navPagamento()">Pagamento</ion-card-header>
                 </ion-card>
 
                 <ion-card>
-
-                    <ion-card-header text-center>
-                        Transferência
-                    </ion-card-header>
-
+                    <ion-card-header text-center (click)="navTransferencia()">Transferência</ion-card-header>
                 </ion-card>
-
-
             </ion-col>
         </ion-row>
 
@@ -50,8 +35,5 @@
                 </button>
             </ion-col>
         </ion-row>
-
     </ion-grid>
-
-
 </ion-content>
