@@ -7,6 +7,7 @@ import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ExtratoPage } from '../pages/extrato/extrato';
 import { TransferenciaPage } from '../pages/transferencia/transferencia';
+import { PagamentoPage } from '../pages/pagamento/pagamento';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,8 +17,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
         MyApp,
         LoginPage,
         HomePage,
-        TransferenciaPage,
-        ExtratoPage
+        ExtratoPage,
+        PagamentoPage,
+        TransferenciaPage
     ],
     imports: [
         BrowserModule,
@@ -28,8 +30,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
         MyApp,
         LoginPage,
         HomePage,
+        ExtratoPage,
         TransferenciaPage,
-        ExtratoPage
+        PagamentoPage
     ],
     providers: [
         StatusBar,
