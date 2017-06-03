@@ -1,9 +1,18 @@
 .card {
   background-color: #0070AF;
 }
-.card ion-card-header{
+
+.card ion-card-header {
   color: #ffffff !important;
 }
-.icone-mais{
+
+.icone-mais {
   font-size: 3em;
+}
+
+.meuBotao {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #0070AF;
 }

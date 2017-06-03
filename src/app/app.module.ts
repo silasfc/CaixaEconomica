@@ -1,16 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import {BrowserModule} from '@angular/platform-browser';
+import {ErrorHandler, NgModule} from '@angular/core';
+import {IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
 
-import { MyApp } from './app.component';
-import { LoginPage } from '../pages/login/login';
-import { HomePage } from '../pages/home/home';
-import { ExtratoPage } from '../pages/extrato/extrato';
-import { TransferenciaPage } from '../pages/transferencia/transferencia';
-import { PagamentoPage } from '../pages/pagamento/pagamento';
+import {MyApp} from './app.component';
+import {LoginPage} from '../pages/login/login';
+import {HomePage} from '../pages/home/home';
+import {ExtratoPage} from '../pages/extrato/extrato';
+import {TransferenciaPage} from '../pages/transferencia/transferencia';
+import {PagamentoPage} from '../pages/pagamento/pagamento';
+import {ConfirmaTransferenciaPage} from '../pages/confirma-transferencia/confirma-transferencia';
+import {ConfirmaPagamentoPage} from '../pages/confirma-pagamento/confirma-pagamento';
+import {FaleConoscoPage} from '../pages/fale-conosco/fale-conosco';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import {StatusBar} from '@ionic-native/status-bar';
+import {SplashScreen} from '@ionic-native/splash-screen';
 
 @NgModule({
     declarations: [
@@ -19,7 +22,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
         HomePage,
         ExtratoPage,
         PagamentoPage,
-        TransferenciaPage
+        TransferenciaPage,
+        ConfirmaTransferenciaPage,
+        ConfirmaPagamentoPage,
+        FaleConoscoPage
     ],
     imports: [
         BrowserModule,
@@ -32,7 +38,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
         HomePage,
         ExtratoPage,
         TransferenciaPage,
-        PagamentoPage
+        PagamentoPage,
+        ConfirmaTransferenciaPage,
+        ConfirmaPagamentoPage,
+        FaleConoscoPage
     ],
     providers: [
         StatusBar,
