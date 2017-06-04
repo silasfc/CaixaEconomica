@@ -8,8 +8,6 @@ import {HomePage} from '../pages/home/home';
 import {ExtratoPage} from '../pages/extrato/extrato';
 import {PagamentoPage} from '../pages/pagamento/pagamento';
 import {TransferenciaPage} from '../pages/transferencia/transferencia';
-import {ConfirmaTransferenciaPage} from '../pages/confirma-transferencia/confirma-transferencia';
-import {ConfirmaPagamentoPage} from '../pages/confirma-pagamento/confirma-pagamento';
 import {FaleConoscoPage} from '../pages/fale-conosco/fale-conosco';
 
 

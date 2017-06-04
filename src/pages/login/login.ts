@@ -11,12 +11,12 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController) {}
 
-  loadHome() {
+  navHome() {
     // this.navCtrl.setRoot(HomePage);
     this.navCtrl.push(HomePage, {auth: true});
   }
 
-  loadFaleConosco() {
+  navFaleConosco() {
     this.navCtrl.push(FaleConoscoPage, {auth: true});
   }
 

@@ -12,7 +12,7 @@ export class TransferenciaPage {
 
     }
 
-    loadConfirmaTransferencia() {
+    navConfirmaTransferencia() {
       this.navCtrl.push(ConfirmaTransferenciaPage, {});
     }
 

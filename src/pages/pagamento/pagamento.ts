@@ -11,7 +11,7 @@ export class PagamentoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  loadConfirmaPagamento() {
+  navConfirmaPagamento() {
     this.navCtrl.push(ConfirmaPagamentoPage, {});
   }
 

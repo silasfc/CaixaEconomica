@@ -1,43 +1,45 @@
 <ion-header>
-    <ion-navbar text-right color="blueCE">
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>R$ 5.950,00&nbsp;&nbsp;<ion-icon name="eye-off"></ion-icon></ion-title>
-    </ion-navbar>
+  <ion-navbar text-right color="blueCE">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>R$ 5.950,00&nbsp;&nbsp;
+      <ion-icon name="eye-off"></ion-icon>
+    </ion-title>
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-grid>
-        <ion-row>
-            <span class="cadaBC">Início</span>
-            <ion-icon name="ios-arrow-forward"></ion-icon>
-            <span class="cadaBC">Pagamento</span>
-        </ion-row>
+  <ion-grid>
+    <ion-row>
+      <span class="cadaBC">Início</span>
+      <ion-icon name="ios-arrow-forward"></ion-icon>
+      <span class="cadaBC">Pagamento</span>
+    </ion-row>
 
-        <ion-row>
-            <ion-col col-2 col-sm-2 col-md-3 col-lg-4 col-xl-4>
-            </ion-col>
-            <ion-col col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4>
-                <ion-list>
-                    <ion-item>
-                        <ion-label floating>Código de Barras</ion-label>
-                        <ion-input type="text"></ion-input>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label>Data</ion-label>
-                        <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
-                    </ion-item>
-                </ion-list>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col col-2 col-sm-2 col-md-3 col-lg-4 col-xl-4>
-            </ion-col>
-            <ion-col col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 text-center>
-                <button ion-button>Leitor</button>
-                <button (click)="loadConfirmaPagamento()" ion-button>Continuar</button>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+    <ion-row>
+      <ion-col col-2 col-sm-2 col-md-3 col-lg-4 col-xl-4>
+      </ion-col>
+      <ion-col col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4>
+        <ion-list>
+          <ion-item>
+            <ion-label floating>Código de Barras</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Data</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2 col-sm-2 col-md-3 col-lg-4 col-xl-4>
+      </ion-col>
+      <ion-col col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 text-center>
+        <button ion-button>Leitor</button>
+        <button (click)="navConfirmaPagamento()" ion-button>Continuar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

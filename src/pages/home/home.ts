@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { ExtratoPage } from '../extrato/extrato';
 import { PagamentoPage } from '../pagamento/pagamento';
 import { TransferenciaPage } from '../transferencia/transferencia';
+import { EmiteSenhaPage } from '../emite-senha/emite-senha';
 
 @Component({
   selector: 'page-home',
@@ -15,14 +16,18 @@ export class HomePage {
   }
 
   navExtrato() {
-    this.navCtrl.push(ExtratoPage);
+    this.navCtrl.push(ExtratoPage, {});
   }
 
   navPagamento() {
-    this.navCtrl.push(PagamentoPage);
+    this.navCtrl.push(PagamentoPage, {});
   }
 
   navTransferencia() {
-    this.navCtrl.push(TransferenciaPage);
+    this.navCtrl.push(TransferenciaPage, {});
+  }
+
+  navEmiteSenha() {
+    this.navCtrl.push(EmiteSenhaPage, {});
   }
 }

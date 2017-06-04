@@ -11,6 +11,7 @@ import {PagamentoPage} from '../pages/pagamento/pagamento';
 import {ConfirmaTransferenciaPage} from '../pages/confirma-transferencia/confirma-transferencia';
 import {ConfirmaPagamentoPage} from '../pages/confirma-pagamento/confirma-pagamento';
 import {FaleConoscoPage} from '../pages/fale-conosco/fale-conosco';
+import {EmiteSenhaPage} from '../pages/emite-senha/emite-senha';
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -25,7 +26,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         TransferenciaPage,
         ConfirmaTransferenciaPage,
         ConfirmaPagamentoPage,
-        FaleConoscoPage
+        FaleConoscoPage,
+        EmiteSenhaPage
     ],
     imports: [
         BrowserModule,
@@ -41,7 +43,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         PagamentoPage,
         ConfirmaTransferenciaPage,
         ConfirmaPagamentoPage,
-        FaleConoscoPage
+        FaleConoscoPage,
+        EmiteSenhaPage
     ],
     providers: [
         StatusBar,
