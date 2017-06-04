@@ -26,6 +26,8 @@ Baixar e instalar o nodejs, que já conterá o npm para uso no seu S.O. Em segui
 * ionic
 
 Aqui serão instalados os mais recentes releases de todos os componentes de software necessários.
+Observação: os passos a seguir foram executados em um SO Linux, mas não deve diferir caso alguém queira realizar o mesmo no ambiente Windows ou macOS.
+
 Para tal, execute:
 
 ```
