@@ -1,25 +1,68 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Protótipo de Redesenho do App da Caixa Econômica
 
-## How to use this template
+#### Acadêmicos
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
+* Caetano Finisterre Burjack da Silva
+* Silas Ferraciolli Corrêa
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
+#### Objetivo
 
-### With the Ionic CLI:
+Desenvolver duas soluções (Android e iOS) como objeto de avaliação da disciplina de Projeto de Interface para Dispositivos Móveis - Faculdade Católica do Tocantins
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+#### Status
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
+O protótipo ainda precisa evoluir bastante, mas como se trata apenas de uma prévia do que virão a ser as telas reais do aplicativo, já se pode ter uma noção a partir dessa experiência.
+
+#### Requisitos primários
+
+* JDK (preferencialmente o mais recente)
+* Node Package Manager - NPM (preferencialmente o mais recente)
+
+#### Requisitos secundários
+
+Baixar e instalar o nodejs, que já conterá o npm para uso no seu S.O. Em seguida, instalar os dois maiores responsáveis pelo desenvolvimento deste trabalho:
+
+* cordova
+* ionic
+
+Aqui serão instalados os mais recentes releases de todos os componentes de software necessários.
+Para tal, execute:
+
+```
+$ sudo npm install -g cordova@latest ionic@latest
 ```
 
-Then, to run it, cd into `mySideMenu` and run:
+#### Instalação/Construção do App
 
-```bash
+* Clonar o projeto:
+```
+$ git clone https://github.com/silasfc/CaixaEconomica.git
+```
+
+* Abrir diretório do projeto:
+```
+$ cd CaixaEconomica
+```
+
+* Instalar requisitos:
+```
+$ npm install
+```
+
+* Adicionar plataformas:
+```
+$ ionic cordova platform add android
 $ ionic cordova platform add ios
+```
+
+* Construir os binários para as plataformas:
+```
+$ ionic cordova build android
+$ ionic cordova build ios
+```
+
+* Construir/Rodar o app nas plataformas:
+```
+$ ionic cordova run android
 $ ionic cordova run ios
 ```
-
-Substitute ios for android if not on a Mac.
